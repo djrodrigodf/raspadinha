@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+.scratch-off-gallery {
+  clear: both;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+.scratch-off-gallery__item {
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.scratch-off-gallery__item > div {
+  position: relative;
+}
+
+.scratch-off-gallery__item > div img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.scratch-off-gallery__item > div canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
